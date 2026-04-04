@@ -99,8 +99,8 @@ export default function LandingPage() {
             layout="section"
             title="TERMS OF EXCLUSIVITY"
             sections={[
-              { heading: "Privacy Policy", content: [{ text: "Your data is handled with the same reverence as our craft." }] },
-              { heading: "Membership Terms", content: [{ text: "No sharing of credentials; strict adherence to the Grisha conduct." }] },
+              { heading: "Privacy Policy", content: [{ type: "paragraph", text: "Your data is handled with the same reverence as our craft." }] },
+              { heading: "Membership Terms", content: [{ type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." }] },
             ]}
           />
         </div>
