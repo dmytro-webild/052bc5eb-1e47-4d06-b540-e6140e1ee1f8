@@ -51,17 +51,17 @@ export default function LandingPage() {
       carouselItems={[
         {
           id: "1",
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?_wi=1",
           imageAlt: "Window to Europe",
         },
         {
           id: "2",
-          imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1",
           imageAlt: "European Archive",
         },
         {
           id: "3",
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg?_wi=1",
           imageAlt: "The Vision",
         },
         {
@@ -120,13 +120,13 @@ export default function LandingPage() {
           id: "004",
           name: "ITEM #004",
           price: "ARCHIVE",
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?_wi=2",
         },
         {
           id: "005",
           name: "ITEM #005",
           price: "ARCHIVE",
-          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg?_wi=2",
         },
       ]}
       title="AUTHORIZED SELECTION"
@@ -140,7 +140,7 @@ export default function LandingPage() {
       useInvertedBackground={false}
       title="INQUIRIES"
       description="Standard protocol for new members."
-      imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2"
       mediaAnimation="blur-reveal"
       faqsAnimation="slide-up"
       faqs={[
