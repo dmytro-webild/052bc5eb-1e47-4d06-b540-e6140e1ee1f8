@@ -77,13 +77,14 @@ export default function LandingPage() {
 
         <div id="faq" data-section="faq">
           <FaqSplitMedia
-            textboxLayout="default"
+            textboxLayout="split-actions"
             useInvertedBackground={false}
             title="INQUIRIES"
             description="Standard protocol for new members."
             imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2"
             mediaAnimation="blur-reveal"
             faqsAnimation="blur-reveal"
+            buttons={[{ text: "Apply for Access", href: "/apply" }]}
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
