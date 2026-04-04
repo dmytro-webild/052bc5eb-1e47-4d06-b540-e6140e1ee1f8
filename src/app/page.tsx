@@ -42,7 +42,7 @@ export default function LandingPage() {
             description="Access granted to the authorized selection. ESTATE is the preservation of rock and couture."
             carouselItems={[
               { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Window to Europe" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", imageAlt: "European Archive" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1", imageAlt: "European Archive" },
               { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg", imageAlt: "The Vision" },
               { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg", imageAlt: "Estate Design" },
               { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg", imageAlt: "Signature Look" },
@@ -81,7 +81,7 @@ export default function LandingPage() {
             useInvertedBackground={false}
             title="INQUIRIES"
             description="Standard protocol for new members."
-            imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg"
+            imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2"
             mediaAnimation="blur-reveal"
             faqsAnimation="slide-up"
             faqs={[
