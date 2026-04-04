@@ -18,18 +18,18 @@ export default function LandingPage() {
         borderRadius="pill"
         contentWidth="small"
         sizing="largeSmallSizeMediumTitles"
-        background="grid"
-        cardStyle="gradient-mesh"
+        background="none"
+        cardStyle="outline"
         primaryButtonStyle="flat"
         secondaryButtonStyle="solid"
-        headingFontWeight="extrabold"
+        headingFontWeight="semibold"
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleCentered
             navItems={[
-              { name: "Archive", id: "archive" },
-              { name: "Manifesto", id: "manifesto" },
+              { name: "The Evidence", id: "archive" },
+              { name: "The Manifesto", id: "manifesto" },
             ]}
             brandName="ESTATE"
           />
@@ -37,16 +37,16 @@ export default function LandingPage() {
 
         <div id="hero" data-section="hero">
           <HeroBillboardRotatedCarousel
-            background={{ variant: "rotated-rays-static" }}
+            background={{ variant: "plain" }}
             title="THE WINDOW TO EUROPE"
             description="Access granted to the authorized selection. ESTATE is the preservation of rock and couture."
             carouselItems={[
-              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Window to Europe" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1", imageAlt: "European Archive" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg", imageAlt: "The Vision" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg", imageAlt: "Estate Design" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg", imageAlt: "Signature Look" },
-              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Luxury Detail" },
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Architectural detail" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1", imageAlt: "Grainy Grisha" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg", imageAlt: "Sepia archive" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg", imageAlt: "Architectural detail" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg", imageAlt: "Grainy Grisha" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Sepia architectural" },
             ]}
           />
         </div>
@@ -63,14 +63,14 @@ export default function LandingPage() {
           <ProductCardOne
             textboxLayout="split-description"
             gridVariant="three-columns-all-equal-width"
-            animationType="slide-up"
+            animationType="blur-reveal"
             useInvertedBackground={false}
             products={[
               { id: "001", name: "ITEM #001", price: "ARCHIVE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
               { id: "002", name: "ITEM #002", price: "ARCHIVE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
               { id: "003", name: "ITEM #003", price: "ARCHIVE", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
             ]}
-            title="AUTHORIZED SELECTION"
+            title="THE EVIDENCE"
             description="Pieces from the private archive."
           />
         </div>
@@ -83,7 +83,7 @@ export default function LandingPage() {
             description="Standard protocol for new members."
             imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2"
             mediaAnimation="blur-reveal"
-            faqsAnimation="slide-up"
+            faqsAnimation="blur-reveal"
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
