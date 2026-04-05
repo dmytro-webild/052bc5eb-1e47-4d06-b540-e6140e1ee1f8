@@ -44,12 +44,12 @@ export default function LandingPage() {
             description="We don't sell clothing. We sell The Shell of Godhood. Your first step into authorized existence."
             buttons={[{ text: "BECOME. (ENTER VAULT)", href: "#" }]}
             carouselItems={[
-              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Brutalist concrete" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Dark silhouette" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", imageAlt: "Motion portrait" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Brutalist concrete" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Dark silhouette" },
-              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", imageAlt: "Motion portrait" },
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?_wi=1", imageAlt: "Brutalist concrete" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?_wi=1", imageAlt: "Dark silhouette" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1", imageAlt: "Motion portrait" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?_wi=2", imageAlt: "Brutalist concrete" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?_wi=2", imageAlt: "Dark silhouette" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2", imageAlt: "Motion portrait" },
             ]}
             titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(4rem,10vw,12rem)] leading-[0.9]"
             carouselClassName="grayscale contrast-[2] brightness-50"
