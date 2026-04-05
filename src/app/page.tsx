@@ -15,7 +15,7 @@ export default function LandingPage() {
     <ThemeProvider
         defaultButtonVariant="expand-hover"
         defaultTextAnimation="entrance-slide"
-        borderRadius="pill"
+        borderRadius="none"
         contentWidth="small"
         sizing="largeSmallSizeMediumTitles"
         background="none"
@@ -50,6 +50,7 @@ export default function LandingPage() {
               { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=5&filter=grayscale", imageAlt: "Sepia architectural" },
             ]}
             titleClassName="tracking-[-0.02em]"
+            carouselClassName="grayscale contrast-125"
           />
         </div>
 
@@ -69,7 +70,7 @@ export default function LandingPage() {
             animationType="blur-reveal"
             useInvertedBackground={false}
             cardClassName="border border-[#8C5638] overflow-hidden"
-            imageClassName="filter sepia-50 brightness-75 scale-110"
+            imageClassName="filter grayscale contrast-125 brightness-75 scale-110"
             products={[
               { id: "001", name: "ITEM #001", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
               { id: "002", name: "ITEM #002", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
@@ -91,7 +92,7 @@ export default function LandingPage() {
             mediaAnimation="blur-reveal"
             faqsAnimation="blur-reveal"
             buttons={[{ text: "Request Access", href: "/apply" }]}
-            className="[&_a[href='/apply']]:underline [&_a[href='/apply']]:no-underline [&_a[href='/apply']]:text-inherit [&_a[href='/apply']]:font-normal"
+            className="[&_a[href='/apply']]:underline [&_a[href='/apply']]:no-underline [&_a[href='/apply']]:text-inherit [&_a[href='/apply']]:font-normal [&_a[href='/apply']]:border [&_a[href='/apply']]:border-black [&_a[href='/apply']]:rounded-none"
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
@@ -100,6 +101,7 @@ export default function LandingPage() {
               { id: "q5", title: "Can I visit the boutique?", content: "Boutique appointments are handled via private request." },
             ]}
             textBoxTitleClassName="tracking-[-0.02em]"
+            mediaClassName="grayscale contrast-125"
           />
         </div>
 
