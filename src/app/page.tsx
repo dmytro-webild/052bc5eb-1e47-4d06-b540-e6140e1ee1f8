@@ -59,13 +59,14 @@ export default function LandingPage() {
             animationType="blur-reveal"
             useInvertedBackground={false}
             products={[
-              { id: "p1", name: "ARCHIVE-01", price: "00.00", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
-              { id: "p2", name: "ARCHIVE-02", price: "00.00", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
-              { id: "p3", name: "ARCHIVE-03", price: "00.00", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
-              { id: "p4", name: "ARCHIVE-04", price: "00.00", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg" },
+              { id: "p1", name: "ARTIFACT 001", price: "", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg", onProductClick: () => window.location.href = '#contact' },
+              { id: "p2", name: "THE SHELL", price: "", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg", onProductClick: () => window.location.href = '#contact' },
+              { id: "p3", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg", onProductClick: () => window.location.href = '#contact' },
+              { id: "p4", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", onProductClick: () => window.location.href = '#contact' },
             ]}
             title="ARCHIVAL GALLERY"
             description="High-fashion portraits meet structural forms in grain-filmed detail."
+            imageClassName="filter grayscale contrast-125 sepia-0 brightness-100 mix-blend-multiply opacity-90 contrast-more" 
           />
         </div>
 
