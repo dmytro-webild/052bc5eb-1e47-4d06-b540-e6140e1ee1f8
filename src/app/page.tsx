@@ -15,7 +15,7 @@ export default function LandingPage() {
     <ThemeProvider
         defaultButtonVariant="expand-hover"
         defaultTextAnimation="entrance-slide"
-        borderRadius="none"
+        borderRadius="rounded"
         contentWidth="small"
         sizing="largeSmallSizeMediumTitles"
         background="none"
