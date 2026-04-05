@@ -2,14 +2,10 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
-import LegalSection from '@/components/legal/LegalSection';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import TextAbout from '@/components/sections/about/TextAbout';
-import ButtonTextUnderline from '@/components/button/ButtonTextUnderline';
 
 export default function LandingPage() {
   return (
@@ -61,6 +57,7 @@ export default function LandingPage() {
             textboxLayout="split-description"
             gridVariant="four-items-2x2-equal-grid"
             animationType="blur-reveal"
+            useInvertedBackground={false}
             products={[
               { id: "p1", name: "ARCHIVE-01", price: "00.00", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
               { id: "p2", name: "ARCHIVE-02", price: "00.00", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
