@@ -8,6 +8,7 @@ import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { DM_Sans } from "next/font/google";
 import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Unbounded } from "next/font/google";
 
 
 
@@ -22,13 +23,10 @@ export const metadata: Metadata = {
 };
 
 
-const cormorantGaramond = Cormorant_Garamond({
-  variable: "--font-cormorant",  subsets: ["latin"],
-  weight: ["700"],
-});
-const montserrat = Montserrat({
-  variable: "--font-montserrat",  subsets: ["latin"],
-  weight: ["500"],
+
+const unbounded = Unbounded({
+  variable: "--font-unbounded",  subsets: ["latin"],
+  weight: ["900"],
 });
 
 export default function RootLayout({
@@ -39,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${cormorantGaramond.variable} ${montserrat.variable} antialiased`}>
+        <body className={`${unbounded.variable} antialiased`}>
           <Tag />
           {children}
           <script
