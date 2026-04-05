@@ -28,11 +28,11 @@ export default function LandingPage() {
         <div id="nav" data-section="nav" className="py-10">
           <NavbarStyleCentered
             navItems={[
-              { name: "THE ESTATE", id: "archive" },
-              { name: "THE MANIFESTO", id: "manifesto" },
+              { name: "AUTHORIZED ARCHIVES", id: "archive" },
+              { name: "ROCK VISION & ARCHITECTURE", id: "manifesto" },
             ]}
             brandName="ESTATE"
-            className="tracking-[0.05em] uppercase"
+            className="tracking-[0.05em] uppercase font-montserrat"
           />
         </div>
 
@@ -42,14 +42,14 @@ export default function LandingPage() {
             title="THE WINDOW TO EUROPE"
             description="Request Access to the authorized selection. ESTATE is the preservation of rock and couture."
             carouselItems={[
-              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=5&filter=sepia", imageAlt: "Architectural detail" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=5&filter=grayscale", imageAlt: "Grainy Grisha" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg?q=80&w=800&blur=5&filter=sepia", imageAlt: "Sepia archive" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg?q=80&w=800&blur=5&filter=grayscale", imageAlt: "Architectural detail" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg?q=80&w=800&blur=5&filter=sepia", imageAlt: "Grainy Grisha" },
-              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=5&filter=grayscale", imageAlt: "Sepia architectural" },
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Gothic portrait of THE GRISHA" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=10&filter=grayscale", imageAlt: "Grainy Grisha" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Sepia archive" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "Architectural detail" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Grainy Grisha" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "Sepia architectural" },
             ]}
-            titleClassName="tracking-[-0.02em]"
+            titleClassName="tracking-[0.05em] font-montserrat"
             carouselClassName="grayscale contrast-125"
           />
         </div>
@@ -58,27 +58,27 @@ export default function LandingPage() {
           <TextAbout
             useInvertedBackground={false}
             tag="MANIFESTO"
-            title="THE VISION OF THE GRISHA"
-            titleClassName="tracking-[-0.02em]"
+            title="ROCK VISION & ARCHITECTURE"
+            titleClassName="tracking-[0.05em] font-montserrat"
           />
         </div>
 
         <div id="archive" data-section="archive" className="py-20">
           <ProductCardOne
             textboxLayout="split-description"
-            gridVariant="three-columns-all-equal-width"
+            gridVariant="asymmetric-60-wide-40-narrow"
             animationType="blur-reveal"
             useInvertedBackground={false}
-            cardClassName="border border-[#8C5638] overflow-hidden"
-            imageClassName="filter grayscale contrast-125 brightness-75 scale-110"
+            cardClassName="overflow-hidden"
+            imageClassName="filter grayscale contrast-125 brightness-75"
             products={[
-              { id: "001", name: "ITEM #001", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
-              { id: "002", name: "ITEM #002", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
-              { id: "003", name: "ITEM #003", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
+              { id: "001", name: "ITEM #001", price: "AUTHORIZED ARCHIVES", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
+              { id: "002", name: "ITEM #002", price: "AUTHORIZED ARCHIVES", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
+              { id: "003", name: "ITEM #003", price: "AUTHORIZED ARCHIVES", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
             ]}
-            title="THE EVIDENCE"
+            title="AUTHORIZED ARCHIVES"
             description="Pieces from the private archive."
-            textBoxTitleClassName="tracking-[-0.02em]"
+            textBoxTitleClassName="tracking-[0.05em] font-montserrat"
           />
         </div>
 
@@ -88,24 +88,22 @@ export default function LandingPage() {
             useInvertedBackground={false}
             title="INQUIRIES"
             description="Standard protocol for new members."
-            imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2"
+            imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2&blur=10&filter=sepia"
             mediaAnimation="blur-reveal"
             faqsAnimation="blur-reveal"
-            buttons={[{ text: "Request Access", href: "/apply" }]}
-            className="[&_a[href='/apply']]:underline [&_a[href='/apply']]:no-underline [&_a[href='/apply']]:text-inherit [&_a[href='/apply']]:font-normal [&_a[href='/apply']]:border [&_a[href='/apply']]:border-black [&_a[href='/apply']]:rounded-none"
+            buttons={[{ text: "Request Access", href: "/apply" }]
+            }
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
               { id: "q3", title: "Do you ship internationally?", content: "Shipping is available only to select European hubs." },
-              { id: "q4", title: "Are these pieces limited?", content: "Yes, every item in our archive is produced in strictly limited runs." },
-              { id: "q5", title: "Can I visit the boutique?", content: "Boutique appointments are handled via private request." },
             ]}
-            textBoxTitleClassName="tracking-[-0.02em]"
+            textBoxTitleClassName="tracking-[0.05em] font-montserrat"
             mediaClassName="grayscale contrast-125"
           />
         </div>
 
-        <div id="legal" data-section="legal" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', borderTop: '1px solid #8C5638', borderBottom: '1px solid #8C5638' }}>
+        <div id="legal" data-section="legal" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1' }}>
           <LegalSection
             layout="section"
             title="TERMS OF EXCLUSIVITY"
@@ -113,20 +111,20 @@ export default function LandingPage() {
               { heading: "Privacy Policy", content: [{ type: "paragraph", text: "Your data is handled with the same reverence as our craft." }] },
               { heading: "Membership Terms", content: [{ type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." }] },
             ]}
-            titleClassName="tracking-[-0.02em]"
+            titleClassName="tracking-[0.05em] font-montserrat"
           />
         </div>
 
         <div id="footer" data-section="footer" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1' }}>
           <FooterBaseCard
             logoText="ESTATE"
-            copyrightText="© 2025 ESTATE. All rights reserved. ESTATE is a registered trademark."
+            copyrightText="© 2025 ESTATE. All rights reserved."
             columns={[
-              { title: "THE ESTATE", items: [{ label: "INSTAGRAM", href: "#" }, { label: "VIMEO", href: "#" }] },
-              { title: "IDENTITY", items: [{ label: "FOUNDED BY THE GRISHA", href: "#" }, { label: "PHILOSOPHY", href: "#" }] },
+              { title: "AUTHORIZED ARCHIVES", items: [{ label: "ARCHIVE I", href: "#" }, { label: "ARCHIVE II", href: "#" }] },
+              { title: "ROCK VISION & ARCHITECTURE", items: [{ label: "GRISHA", href: "#" }, { label: "PHILOSOPHY", href: "#" }] },
             ]}
-            columnTitleClassName="tracking-[0.05em] uppercase opacity-70"
-            columnItemClassName="tracking-[0.05em] uppercase"
+            columnTitleClassName="tracking-[0.05em] uppercase opacity-70 font-montserrat"
+            columnItemClassName="tracking-[0.05em] uppercase font-montserrat"
           />
         </div>
       </ReactLenis>
