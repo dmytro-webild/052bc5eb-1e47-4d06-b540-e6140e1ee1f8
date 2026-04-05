@@ -73,7 +73,7 @@ export default function LandingPage() {
           <FooterBaseCard
             logoText="ESTATE FASHION HOUSE. 2026. FOUNDED BY THE GRISHA."
             columns={[
-                { title: "NAVIGATE", items: [{ label: "LINKTREE", href: "https://linktr.ee/estate" }] }
+                { title: "NAVIGATE", items: [{ label: "LINKTREE", href: "https://linktr.ee/estate.fashion.house" }] }
             ]}
             className="tracking-[0.1em] text-center uppercase"
           />
