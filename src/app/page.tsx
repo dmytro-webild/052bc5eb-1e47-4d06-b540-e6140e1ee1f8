@@ -18,7 +18,7 @@ export default function LandingPage() {
         borderRadius="rounded"
         contentWidth="small"
         sizing="largeSmallSizeMediumTitles"
-        background="none"
+        background="radialGradient"
         cardStyle="outline"
         primaryButtonStyle="flat"
         secondaryButtonStyle="solid"
@@ -38,7 +38,7 @@ export default function LandingPage() {
 
         <div id="hero" data-section="hero" className="py-10">
           <HeroBillboardRotatedCarousel
-            background={{ variant: "plain" }}
+            background={{ variant: "radial-gradient" }}
             title="THE WINDOW TO EUROPE"
             description="Request Access to the authorized selection. ESTATE is the preservation of rock and couture."
             carouselItems={[
@@ -49,7 +49,7 @@ export default function LandingPage() {
               { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Grainy Grisha" },
               { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "Sepia architectural" },
             ]}
-            titleClassName="tracking-[0.05em] font-montserrat"
+            titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(3rem,8vw,10rem)]"
             carouselClassName="grayscale contrast-125"
           />
         </div>
@@ -91,8 +91,7 @@ export default function LandingPage() {
             imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2&blur=10&filter=sepia"
             mediaAnimation="blur-reveal"
             faqsAnimation="blur-reveal"
-            buttons={[{ text: "Request Access", href: "/apply" }]
-            }
+            buttons={[{ text: "Request Access", href: "/apply" }]}
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
