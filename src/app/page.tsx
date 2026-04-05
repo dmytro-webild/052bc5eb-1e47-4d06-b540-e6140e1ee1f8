@@ -18,7 +18,7 @@ export default function LandingPage() {
         borderRadius="rounded"
         contentWidth="small"
         sizing="largeSmallSizeMediumTitles"
-        background="circleGradient"
+        background="noiseDiagonalGradient"
         cardStyle="outline"
         primaryButtonStyle="flat"
         secondaryButtonStyle="solid"
@@ -30,7 +30,7 @@ export default function LandingPage() {
             navItems={[
               { name: "VERSION 1.0", id: "hero" },
               { name: "THE SHELL", id: "archive" },
-              { name: "SYSTEM STATUS: ACTIVE", id: "manifesto" },
+              { name: "SYSTEM STATUS: ACTIVE", id: "faq" },
             ]}
             brandName="ESTATE"
             className="tracking-[0.05em] uppercase font-montserrat"
@@ -42,18 +42,17 @@ export default function LandingPage() {
             background={{ variant: "radial-gradient" }}
             title="YOUR OLD LIFE IS DEAD."
             description="We don't sell clothing. We sell The Shell of Godhood. Your first step into authorized existence."
-            buttons={[{ text: "BECOME. (ENTER VAULT)", href: "/vault" }]}
+            buttons={[{ text: "BECOME. (ENTER VAULT)", href: "#" }]}
             carouselItems={[
-              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "brutalist concrete" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "dark silhouette" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=10&filter=grayscale", imageAlt: "motion portrait" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "brutalist concrete" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "dark silhouette" },
-              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=10&filter=grayscale", imageAlt: "motion portrait" },
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Brutalist concrete" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Dark silhouette" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", imageAlt: "Motion portrait" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Brutalist concrete" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Dark silhouette" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", imageAlt: "Motion portrait" },
             ]}
-            titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(3rem,8vw,12rem)]"
+            titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(4rem,10vw,12rem)] leading-[0.9]"
             carouselClassName="grayscale contrast-[2] brightness-50"
-            buttonContainerClassName="mt-12"
           />
         </div>
 
@@ -89,7 +88,7 @@ export default function LandingPage() {
           <FaqSplitMedia
             textboxLayout="split-actions"
             useInvertedBackground={false}
-            title="INQUIRIES"
+            title="SYSTEM STATUS: ACTIVE"
             description="Standard protocol for new members."
             imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2&blur=10&filter=sepia"
             mediaAnimation="blur-reveal"
@@ -110,8 +109,8 @@ export default function LandingPage() {
             layout="section"
             title="TERMS OF EXCLUSIVITY"
             sections={[
-              { heading: "Privacy Policy", content: { type: "paragraph", text: "Your data is handled with the same reverence as our craft." } },
-              { heading: "Membership Terms", content: { type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." } },
+              { heading: "Privacy Policy", content: [{ type: "paragraph", text: "Your data is handled with the same reverence as our craft." }] },
+              { heading: "Membership Terms", content: [{ type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." }] },
             ]}
             titleClassName="tracking-[0.05em] font-montserrat"
           />
