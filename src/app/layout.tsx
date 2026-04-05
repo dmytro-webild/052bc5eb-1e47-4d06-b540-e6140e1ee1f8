@@ -7,6 +7,7 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { DM_Sans } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 
 
 
@@ -20,13 +21,14 @@ export const metadata: Metadata = {
   },
 };
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
+
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant",  subsets: ["latin"],
+  weight: ["700"],
 });
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const montserrat = Montserrat({
+  variable: "--font-montserrat",  subsets: ["latin"],
+  weight: ["500"],
 });
 
 export default function RootLayout({
@@ -37,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
+        <body className={`${cormorantGaramond.variable} ${montserrat.variable} antialiased`}>
           <Tag />
           {children}
           <script

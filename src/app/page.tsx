@@ -22,16 +22,17 @@ export default function LandingPage() {
         cardStyle="outline"
         primaryButtonStyle="flat"
         secondaryButtonStyle="solid"
-        headingFontWeight="semibold"
+        headingFontWeight="bold"
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
           <NavbarStyleCentered
             navItems={[
-              { name: "The Estate", id: "archive" },
-              { name: "The Manifesto", id: "manifesto" },
+              { name: "THE ESTATE", id: "archive" },
+              { name: "THE MANIFESTO", id: "manifesto" },
             ]}
             brandName="ESTATE"
+            className="tracking-[0.05em] uppercase"
           />
         </div>
 
@@ -48,6 +49,7 @@ export default function LandingPage() {
               { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg", imageAlt: "Grainy Grisha" },
               { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Sepia architectural" },
             ]}
+            titleClassName="tracking-[-0.02em]"
           />
         </div>
 
@@ -56,6 +58,7 @@ export default function LandingPage() {
             useInvertedBackground={false}
             tag="MANIFESTO"
             title="THE VISION OF THE GRISHA"
+            titleClassName="tracking-[-0.02em]"
           />
         </div>
 
@@ -65,6 +68,7 @@ export default function LandingPage() {
             gridVariant="three-columns-all-equal-width"
             animationType="blur-reveal"
             useInvertedBackground={false}
+            cardClassName="border border-[#8C5638]"
             products={[
               { id: "001", name: "ITEM #001", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
               { id: "002", name: "ITEM #002", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
@@ -72,6 +76,7 @@ export default function LandingPage() {
             ]}
             title="THE EVIDENCE"
             description="Pieces from the private archive."
+            textBoxTitleClassName="tracking-[-0.02em]"
           />
         </div>
 
@@ -92,6 +97,7 @@ export default function LandingPage() {
               { id: "q4", title: "Are these pieces limited?", content: "Yes, every item in our archive is produced in strictly limited runs." },
               { id: "q5", title: "Can I visit the boutique?", content: "Boutique appointments are handled via private request." },
             ]}
+            textBoxTitleClassName="tracking-[-0.02em]"
           />
         </div>
 
@@ -103,6 +109,7 @@ export default function LandingPage() {
               { heading: "Privacy Policy", content: [{ type: "paragraph", text: "Your data is handled with the same reverence as our craft." }] },
               { heading: "Membership Terms", content: [{ type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." }] },
             ]}
+            titleClassName="tracking-[-0.02em]"
           />
         </div>
 
@@ -113,17 +120,19 @@ export default function LandingPage() {
             columns={[
               {
                 title: "THE ESTATE",                items: [
-                  { label: "Instagram", href: "https://instagram.com" },
-                  { label: "Vimeo", href: "#" },
+                  { label: "INSTAGRAM", href: "https://instagram.com" },
+                  { label: "VIMEO", href: "#" },
                 ],
               },
               {
                 title: "IDENTITY",                items: [
-                  { label: "Founded by THE GRISHA", href: "#" },
-                  { label: "Philosophy", href: "#" },
+                  { label: "FOUNDED BY THE GRISHA", href: "#" },
+                  { label: "PHILOSOPHY", href: "#" },
                 ],
               },
             ]}
+            columnTitleClassName="tracking-[0.05em] uppercase"
+            columnItemClassName="tracking-[0.05em] uppercase"
           />
         </div>
       </ReactLenis>
