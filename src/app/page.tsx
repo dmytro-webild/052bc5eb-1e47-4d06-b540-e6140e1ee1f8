@@ -51,21 +51,25 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="archive" data-section="archive" className="py-20">
+        <div id="archive" data-section="archive" className="py-20 bg-[#1A1412]">
           <ProductCardThree
-            textboxLayout="split-description"
+            textboxLayout="default"
             gridVariant="four-items-2x2-equal-grid"
             animationType="blur-reveal"
             useInvertedBackground={false}
             products={[
-              { id: "p1", name: "ARTIFACT 001", price: "", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
-              { id: "p2", name: "THE SHELL", price: "", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
-              { id: "p3", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
-              { id: "p4", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg" },
+              { id: "p1", name: "ARTIFACT 01", price: "", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
+              { id: "p2", name: "ARTIFACT 02", price: "", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
+              { id: "p3", name: "ARTIFACT 03", price: "", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
+              { id: "p4", name: "ARTIFACT 04", price: "", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg" },
             ]}
-            title="ARCHIVAL GALLERY"
-            description="High-fashion portraits meet structural forms in grain-filmed detail."
-            imageClassName="filter grayscale contrast-125 sepia-0 brightness-100 mix-blend-multiply opacity-90 contrast-more" 
+            title="THE AUTHORIZED ARCHIVE."
+            description="An curated collection of structural heritage."
+            className="text-[#EAE7E1]"
+            textBoxTitleClassName="font-['--font-unbounded'] font-bold text-6xl tracking-tighter uppercase"
+            textBoxDescriptionClassName="text-sm uppercase tracking-[0.2em] opacity-60"
+            imageClassName="filter grayscale contrast-[1.5] brightness-90 sepia-0 mix-blend-multiply opacity-90 contrast-more"
+            cardNameClassName="text-[10px] font-['--font-montserrat'] uppercase tracking-[0.3em] text-[#EAE7E1]"
           />
         </div>
 
