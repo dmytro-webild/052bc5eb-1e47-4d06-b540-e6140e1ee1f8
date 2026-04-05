@@ -95,7 +95,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="legal" data-section="legal">
+        <div id="legal" data-section="legal" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', border: '1px solid #8C5638' }}>
           <LegalSection
             layout="section"
             title="TERMS OF EXCLUSIVITY"
@@ -106,7 +106,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="footer" data-section="footer">
+        <div id="footer" data-section="footer" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', borderTop: '1px solid #8C5638' }}>
           <FooterBaseCard
             logoText="ESTATE"
             columns={[
