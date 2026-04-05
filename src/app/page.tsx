@@ -9,6 +9,7 @@ import LegalSection from '@/components/legal/LegalSection';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TextAbout from '@/components/sections/about/TextAbout';
+import ButtonExpandHover from '@/components/button/ButtonExpandHover';
 
 export default function LandingPage() {
   return (
@@ -28,8 +29,9 @@ export default function LandingPage() {
         <div id="nav" data-section="nav" className="py-10">
           <NavbarStyleCentered
             navItems={[
-              { name: "AUTHORIZED ARCHIVES", id: "archive" },
-              { name: "ROCK VISION & ARCHITECTURE", id: "manifesto" },
+              { name: "VERSION 1.0", id: "hero" },
+              { name: "THE SHELL", id: "archive" },
+              { name: "SYSTEM STATUS: ACTIVE", id: "manifesto" },
             ]}
             brandName="ESTATE"
             className="tracking-[0.05em] uppercase font-montserrat"
@@ -39,19 +41,22 @@ export default function LandingPage() {
         <div id="hero" data-section="hero" className="py-10">
           <HeroBillboardRotatedCarousel
             background={{ variant: "radial-gradient" }}
-            title="THE WINDOW TO EUROPE"
-            description="Request Access to the authorized selection. ESTATE is the preservation of rock and couture."
+            title="YOUR OLD LIFE IS DEAD."
+            description="We don't sell clothing. We sell The Shell of Godhood. Your first step into authorized existence."
             carouselItems={[
-              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Gothic portrait of THE GRISHA" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=10&filter=grayscale", imageAlt: "Grainy Grisha" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Sepia archive" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "Architectural detail" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg?q=80&w=800&blur=10&filter=sepia", imageAlt: "Grainy Grisha" },
-              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "Sepia architectural" },
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "brutalist concrete" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "dark silhouette" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=10&filter=grayscale", imageAlt: "motion portrait" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "brutalist concrete" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "dark silhouette" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=10&filter=grayscale", imageAlt: "motion portrait" },
             ]}
-            titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(3rem,8vw,10rem)]"
-            carouselClassName="grayscale contrast-125"
-          />
+            titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(3rem,8vw,12rem)]"
+            carouselClassName="grayscale contrast-[2] brightness-50"
+            buttonContainerClassName="mt-12"
+          >
+            <ButtonExpandHover href="/vault" text="BECOME. (ENTER VAULT)" className="text-4xl font-black uppercase text-white" />
+          </HeroBillboardRotatedCarousel>
         </div>
 
         <div id="manifesto" data-section="manifesto" className="py-20">
@@ -102,7 +107,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="legal" data-section="legal" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1' }}>
+        <div id="legal" data-section="legal" className="py-20" style={{ backgroundColor: '#1A1412', color: '#EAE7E1' }}>
           <LegalSection
             layout="section"
             title="TERMS OF EXCLUSIVITY"
@@ -114,7 +119,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="footer" data-section="footer" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1' }}>
+        <div id="footer" data-section="footer" className="py-20" style={{ backgroundColor: '#1A1412', color: '#EAE7E1' }}>
           <FooterBaseCard
             logoText="ESTATE"
             copyrightText="© 2025 ESTATE. All rights reserved."
