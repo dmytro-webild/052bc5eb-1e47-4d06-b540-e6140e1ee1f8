@@ -18,7 +18,7 @@ export default function LandingPage() {
         borderRadius="rounded"
         contentWidth="small"
         sizing="largeSmallSizeMediumTitles"
-        background="radialGradient"
+        background="circleGradient"
         cardStyle="outline"
         primaryButtonStyle="flat"
         secondaryButtonStyle="solid"
