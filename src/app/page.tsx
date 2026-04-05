@@ -38,7 +38,6 @@ export default function LandingPage() {
             background={{ variant: "plain" }}
             title="ESTATE: THE NEW STANDARD."
             description="Curated rock-vision. Architectural silhouettes. A new archival approach to fashion."
-            buttons={[{ text: "EXPLORE THE COLLECTION", href: "#archive" }]}
             carouselItems={[
               { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?_wi=1", imageAlt: "Fashion portrait" },
               { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?_wi=1", imageAlt: "Architectural detail" },
@@ -59,10 +58,10 @@ export default function LandingPage() {
             animationType="blur-reveal"
             useInvertedBackground={false}
             products={[
-              { id: "p1", name: "ARTIFACT 001", price: "", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg", onProductClick: () => window.location.href = '#contact' },
-              { id: "p2", name: "THE SHELL", price: "", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg", onProductClick: () => window.location.href = '#contact' },
-              { id: "p3", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg", onProductClick: () => window.location.href = '#contact' },
-              { id: "p4", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg", onProductClick: () => window.location.href = '#contact' },
+              { id: "p1", name: "ARTIFACT 001", price: "", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
+              { id: "p2", name: "THE SHELL", price: "", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
+              { id: "p3", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
+              { id: "p4", name: "ARCHIVAL PIECE", price: "", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg" },
             ]}
             title="ARCHIVAL GALLERY"
             description="High-fashion portraits meet structural forms in grain-filmed detail."
