@@ -9,7 +9,6 @@ import LegalSection from '@/components/legal/LegalSection';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TextAbout from '@/components/sections/about/TextAbout';
-import ButtonExpandHover from '@/components/button/ButtonExpandHover';
 
 export default function LandingPage() {
   return (
@@ -43,6 +42,7 @@ export default function LandingPage() {
             background={{ variant: "radial-gradient" }}
             title="YOUR OLD LIFE IS DEAD."
             description="We don't sell clothing. We sell The Shell of Godhood. Your first step into authorized existence."
+            buttons={[{ text: "BECOME. (ENTER VAULT)", href: "/vault" }]}
             carouselItems={[
               { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "brutalist concrete" },
               { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=10&filter=grayscale", imageAlt: "dark silhouette" },
@@ -54,9 +54,7 @@ export default function LandingPage() {
             titleClassName="tracking-[-0.04em] font-black uppercase text-[clamp(3rem,8vw,12rem)]"
             carouselClassName="grayscale contrast-[2] brightness-50"
             buttonContainerClassName="mt-12"
-          >
-            <ButtonExpandHover href="/vault" text="BECOME. (ENTER VAULT)" className="text-4xl font-black uppercase text-white" />
-          </HeroBillboardRotatedCarousel>
+          />
         </div>
 
         <div id="manifesto" data-section="manifesto" className="py-20">
@@ -112,8 +110,8 @@ export default function LandingPage() {
             layout="section"
             title="TERMS OF EXCLUSIVITY"
             sections={[
-              { heading: "Privacy Policy", content: [{ type: "paragraph", text: "Your data is handled with the same reverence as our craft." }] },
-              { heading: "Membership Terms", content: [{ type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." }] },
+              { heading: "Privacy Policy", content: { type: "paragraph", text: "Your data is handled with the same reverence as our craft." } },
+              { heading: "Membership Terms", content: { type: "paragraph", text: "No sharing of credentials; strict adherence to the Grisha conduct." } },
             ]}
             titleClassName="tracking-[0.05em] font-montserrat"
           />
