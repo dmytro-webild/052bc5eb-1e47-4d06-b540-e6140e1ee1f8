@@ -28,7 +28,7 @@ export default function LandingPage() {
         <div id="nav" data-section="nav">
           <NavbarStyleCentered
             navItems={[
-              { name: "The Evidence", id: "archive" },
+              { name: "The Estate", id: "archive" },
               { name: "The Manifesto", id: "manifesto" },
             ]}
             brandName="ESTATE"
@@ -39,7 +39,7 @@ export default function LandingPage() {
           <HeroBillboardRotatedCarousel
             background={{ variant: "plain" }}
             title="THE WINDOW TO EUROPE"
-            description="Access granted to the authorized selection. ESTATE is the preservation of rock and couture."
+            description="Request Access to the authorized selection. ESTATE is the preservation of rock and couture."
             carouselItems={[
               { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Architectural detail" },
               { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1", imageAlt: "Grainy Grisha" },
@@ -66,9 +66,9 @@ export default function LandingPage() {
             animationType="blur-reveal"
             useInvertedBackground={false}
             products={[
-              { id: "001", name: "ITEM #001", price: "ARCHIVE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
-              { id: "002", name: "ITEM #002", price: "ARCHIVE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
-              { id: "003", name: "ITEM #003", price: "ARCHIVE", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
+              { id: "001", name: "ITEM #001", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
+              { id: "002", name: "ITEM #002", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
+              { id: "003", name: "ITEM #003", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/button-warm-blue-shirt-macro-shot_169016-23219.jpg" },
             ]}
             title="THE EVIDENCE"
             description="Pieces from the private archive."
@@ -84,7 +84,7 @@ export default function LandingPage() {
             imageSrc="http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=2"
             mediaAnimation="blur-reveal"
             faqsAnimation="blur-reveal"
-            buttons={[{ text: "Apply for Access", href: "/apply" }]}
+            buttons={[{ text: "Request Access", href: "/apply" }]}
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
@@ -109,9 +109,10 @@ export default function LandingPage() {
         <div id="footer" data-section="footer" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', borderTop: '1px solid #8C5638' }}>
           <FooterBaseCard
             logoText="ESTATE"
+            copyrightText="© 2025 ESTATE. All rights reserved. ESTATE is a registered trademark. Unauthorized duplication or distribution of any materials from this site is strictly prohibited and protected by international copyright laws."
             columns={[
               {
-                title: "ARCHIVE",                items: [
+                title: "THE ESTATE",                items: [
                   { label: "Instagram", href: "https://instagram.com" },
                   { label: "Vimeo", href: "#" },
                 ],
