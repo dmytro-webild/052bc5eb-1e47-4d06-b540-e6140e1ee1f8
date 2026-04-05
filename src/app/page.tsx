@@ -25,7 +25,7 @@ export default function LandingPage() {
         headingFontWeight="bold"
     >
       <ReactLenis root>
-        <div id="nav" data-section="nav">
+        <div id="nav" data-section="nav" className="py-10">
           <NavbarStyleCentered
             navItems={[
               { name: "THE ESTATE", id: "archive" },
@@ -36,24 +36,24 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="hero" data-section="hero">
+        <div id="hero" data-section="hero" className="py-10">
           <HeroBillboardRotatedCarousel
             background={{ variant: "plain" }}
             title="THE WINDOW TO EUROPE"
             description="Request Access to the authorized selection. ESTATE is the preservation of rock and couture."
             carouselItems={[
-              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg", imageAlt: "Architectural detail" },
-              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1", imageAlt: "Grainy Grisha" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg", imageAlt: "Sepia archive" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg", imageAlt: "Architectural detail" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg", imageAlt: "Grainy Grisha" },
-              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg", imageAlt: "Sepia architectural" },
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-lifestyle-fashion-shoot_53876-24683.jpg?q=80&w=800&blur=5&filter=sepia", imageAlt: "Architectural detail" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/young-woman-portrait-with-overexposed-moving-style_23-2149495261.jpg?_wi=1&q=80&w=800&blur=5&filter=grayscale", imageAlt: "Grainy Grisha" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/medium-shot-punk-model-posing-studio_23-2149267474.jpg?q=80&w=800&blur=5&filter=sepia", imageAlt: "Sepia archive" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/view-vintage-camera_23-2150315163.jpg?q=80&w=800&blur=5&filter=grayscale", imageAlt: "Architectural detail" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-woman-holding-old-mirror_23-2149640689.jpg?q=80&w=800&blur=5&filter=sepia", imageAlt: "Grainy Grisha" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/rough-concrete-wall-surface_23-2148413267.jpg?q=80&w=800&blur=5&filter=grayscale", imageAlt: "Sepia architectural" },
             ]}
             titleClassName="tracking-[-0.02em]"
           />
         </div>
 
-        <div id="manifesto" data-section="manifesto">
+        <div id="manifesto" data-section="manifesto" className="py-20">
           <TextAbout
             useInvertedBackground={false}
             tag="MANIFESTO"
@@ -62,13 +62,14 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="archive" data-section="archive">
+        <div id="archive" data-section="archive" className="py-20">
           <ProductCardOne
             textboxLayout="split-description"
             gridVariant="three-columns-all-equal-width"
             animationType="blur-reveal"
             useInvertedBackground={false}
-            cardClassName="border border-[#8C5638]"
+            cardClassName="border border-[#8C5638] overflow-hidden"
+            imageClassName="filter sepia-50 brightness-75 scale-110"
             products={[
               { id: "001", name: "ITEM #001", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/close-up-girl-with-vintage-backpack_23-2148752408.jpg" },
               { id: "002", name: "ITEM #002", price: "THE ESTATE", imageSrc: "http://img.b2bpic.net/free-photo/side-view-woman-wearing-heels_23-2149741919.jpg" },
@@ -80,7 +81,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="faq" data-section="faq">
+        <div id="faq" data-section="faq" className="py-20">
           <FaqSplitMedia
             textboxLayout="split-actions"
             useInvertedBackground={false}
@@ -90,6 +91,7 @@ export default function LandingPage() {
             mediaAnimation="blur-reveal"
             faqsAnimation="blur-reveal"
             buttons={[{ text: "Request Access", href: "/apply" }]}
+            className="[&_a[href='/apply']]:underline [&_a[href='/apply']]:no-underline [&_a[href='/apply']]:text-inherit [&_a[href='/apply']]:font-normal"
             faqs={[
               { id: "q1", title: "How do I access the vault?", content: "Access is currently restricted to invite-only members." },
               { id: "q2", title: "Is the leather ethically sourced?", content: "Every hide is vetted for quality and environmental standards." },
@@ -101,7 +103,7 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="legal" data-section="legal" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', border: '1px solid #8C5638' }}>
+        <div id="legal" data-section="legal" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', borderTop: '1px solid #8C5638', borderBottom: '1px solid #8C5638' }}>
           <LegalSection
             layout="section"
             title="TERMS OF EXCLUSIVITY"
@@ -113,25 +115,15 @@ export default function LandingPage() {
           />
         </div>
 
-        <div id="footer" data-section="footer" style={{ backgroundColor: '#2B231F', color: '#EAE7E1', borderTop: '1px solid #8C5638' }}>
+        <div id="footer" data-section="footer" className="py-20" style={{ backgroundColor: '#2B231F', color: '#EAE7E1' }}>
           <FooterBaseCard
             logoText="ESTATE"
-            copyrightText="© 2025 ESTATE. All rights reserved. ESTATE is a registered trademark. Unauthorized duplication or distribution of any materials from this site is strictly prohibited and protected by international copyright laws."
+            copyrightText="© 2025 ESTATE. All rights reserved. ESTATE is a registered trademark."
             columns={[
-              {
-                title: "THE ESTATE",                items: [
-                  { label: "INSTAGRAM", href: "https://instagram.com" },
-                  { label: "VIMEO", href: "#" },
-                ],
-              },
-              {
-                title: "IDENTITY",                items: [
-                  { label: "FOUNDED BY THE GRISHA", href: "#" },
-                  { label: "PHILOSOPHY", href: "#" },
-                ],
-              },
+              { title: "THE ESTATE", items: [{ label: "INSTAGRAM", href: "#" }, { label: "VIMEO", href: "#" }] },
+              { title: "IDENTITY", items: [{ label: "FOUNDED BY THE GRISHA", href: "#" }, { label: "PHILOSOPHY", href: "#" }] },
             ]}
-            columnTitleClassName="tracking-[0.05em] uppercase"
+            columnTitleClassName="tracking-[0.05em] uppercase opacity-70"
             columnItemClassName="tracking-[0.05em] uppercase"
           />
         </div>
